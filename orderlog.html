@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OilMoney</title>
+    <link rel="stylesheet" href="./css_scripts/bootstrap.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   <link href="https://fonts.googleapis.com/css?family=Baloo|Rubik" rel="stylesheet">
+    
+                
+    <link rel="stylesheet" href="./css_scripts/style.css">
+</head>
+<body ng-app="app" ng-controller="OrderController">
+    
+    <div class="main" style="display:flex; align-items: center;">
+        
+        <div class="navbar1 margic" style="border-radius: 10px;">
+
+            <img src="./img/logoimg.png">
+        
+
+            <a href="./profile.html">Profile</a>
+
+            <a href="./portfolio.html">Portfolio</a>
+            
+             <a href="./orders.html">Order Log</a>
+
+             <a href="">Logout</a>
+
+             <span class="welcomMsg">Welcome, {{user.name}}  <i class="fas fa-user"></i></span>
+        
+        </div>
+
+
+                <div style="width:100%; height: 20rem;display: flex; justify-content: center;align-items: center;">
+                    <div class="fin margic" style="width:60%; margin-top: 0px;">
+                        <div class="finc">
+        
+                           <div>
+                               <label>Commodity Qty : </label> <label> {{user.commodityQty}}</label>
+                           </div>
+        
+                           <div>
+                               <label>Initial Unit Price : </label> <label>{{user.initialPrice}}</label>
+                           </div>
+        
+        
+                           
+        
+                        </div>
+        
+                        <div class="finc">
+        
+                           <div>
+                               <label>Current Lot Value : </label> <label>{{user.lotSize}}</label>
+                           </div>
+        
+                           <div>
+                               <label>Current Unit Price : </label> <label> {{user.currentPrice}}</label>
+                           </div>
+        
+                           
+                           
+        
+                        </div>
+        
+                        <div class="finc">
+        
+                           <div>
+                               <button>Withdraw</button>
+                           </div>
+        
+                           <div>
+                               <button>Deposit</button>
+                           </div>
+        
+                           
+                           
+        
+                        </div>
+        
+                    </div> 
+                  
+                </div>
+                <div class="orderdiv" ng-repeat = "order in orders" >
+
+                    <label for="">User: </label> <h6>{{order.user}}</h6>
+                    <label for="">Qauntity: </label> <h6>15</h6>
+                    <label for="">Offer Price: </label> <h6>{{order.offerPrice}}</h6>
+                    <label for="">Offer Date: </label> <h6>{{order.orderDate}}</h6>
+                    <label for="">Offer Type: </label> <h6>{{order.orderType}}</h6>
+                    <button>BID</button>
+                </div> 
+
+
+            
+                </div>
+           
+
+        
+
+
+
+
+
+
+
+                <script src="./js_scripts/jquery.js"></script>
+                <script src="./js_scripts/bootstrap.min.js"></script>
+                <script src="./js_scripts/angular.min.js"></script>
+                <script src="./js_scripts/angular-cookies.min.js"></script>
+                <script src="./js_scripts/anime.js"></script>
+                <script src="./js_scripts/script.js"></script>
+    
+    </body>
+    </html>

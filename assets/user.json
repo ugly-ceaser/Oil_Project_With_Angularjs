@@ -1,0 +1,52 @@
+
+
+[
+    {
+        "name": "Onyia Martins U",
+        "address": "plot 632 trans aerodrone estate",
+        "phone":"07067179619",
+        "email":"martins.paraclet@gmail.com",
+        "bankName": "United Bank Of Africa",
+        "accountName":"Onyia Martins U",
+        "accountNumber": "0033790201",
+        "username":"ceaser",
+        "password": "1234",
+        "commodityQty":"30",
+        "lotSize":"NGN255000",
+        "initialPrice":"NGN6000",
+        "currentPrice":"NGN8500"
+    },
+
+    {
+        "name": "Onyia olisa U",
+        "address": "plot 632 trans aerodrone estate",
+        "phone":"08139110216",
+        "email":"sixtus123@gmail.com",
+        "bankName": "Diamond Bank",
+        "accountName":"Onyia olisa U",
+        "accountNumber": "1021768825",
+        "username":"cross",
+        "password": "5678",
+        "commodityQty":"40",
+        "lotSize":"NGN340000",
+        "initialPrice":"NGN6500",
+        "currentPrice":"NGN8500"
+    },
+
+    {
+        "name": "Stephinie olisa C",
+        "address": "22/23 isu oba lane trans-ekulu",
+        "phone":"08163293216",
+        "email":"chiazagom@gmail.com",
+        "bankName": "Access Bank",
+        "accountName":"Steph olisa U",
+        "accountNumber": "102174344",
+        "username":"Azagom",
+        "password": "9012",
+        "commodityQty":"15",
+        "lotSize":"NGN127500",
+        "initialPrice":"NGN4000",
+        "currentPrice":"NGN8500"
+    }
+]
+

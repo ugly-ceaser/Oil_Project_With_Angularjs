@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OilMoney</title>
+    <link rel="stylesheet" href="./css_scripts/bootstrap.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   <link href="https://fonts.googleapis.com/css?family=Baloo|Rubik" rel="stylesheet">
+    
+                
+    <link rel="stylesheet" href="./css_scripts/style.css">
+</head>
+<body  ng-app="app" ng-controller="portfolioController">
+    
+    <div class="main">
+        
+        <div class="navbar1 margic" style="border-radius: 10px;">
+
+            <img src="./img/logoimg.png">
+        
+
+            <a href="./profile.html">Profile</a>
+
+            <a href="./portfolio.html">Portfolio</a>
+            
+             <a href="./orderlog.html">Order Log</a>
+
+             <a href="">Logout</a>
+
+             <span class="welcomMsg">Welcome, {{user.name}}  <i class="fas fa-user"></i></span>
+             <div class="portfolio">
+                 <div class="sidebar">
+                     <div class="sidc margic"> 
+                         <label>Commodities</label>
+                          <div>Red Oil</div>
+
+                          <i class="fa fa-arrow-down" aria-hidden="true"></i> </i>
+
+                     </div>
+
+
+                     <div class="sidc margic"> 
+                        <label>Order</label>
+                         <div class="order1">
+                             <input type="text">
+                             <label for="">BUY</label>
+                         </div>
+
+                         <div class="order1">
+                            <input type="text">
+                            <label for="">SELL</label>
+                         </div>
+
+
+                         
+
+                    </div>
+
+                    <div class="sidc margic"> 
+                        <label>Sales Notification</label>
+                       <div class="notify" ng-repeat> 
+                        <div>
+                            <label>Commodity : </label> <label> Red Oil</label>
+                        </div>
+
+                        <div>
+                            <label>Unit Price : </label> <label> N9000</label>
+                        </div>
+
+                       </div>
+                         
+
+
+                         
+
+                    </div>
+                 </div>
+                 <div style="width:'70%'; ">
+                 <div class="fin margic">
+                     <div class="finc">
+
+                        <div>
+                            <label>Commodity Qty : </label> <label> {{user.commodityQty}}</label>
+                        </div>
+
+                        <div>
+                            <label>Initial Unit Price : </label> <label>{{user.initialPrice}}</label>
+                        </div>
+
+
+                        
+
+                     </div>
+
+                     <div class="finc">
+
+                        <div>
+                            <label>Current Lot Value : </label> <label>{{user.lotSize}}</label>
+                        </div>
+
+                        <div>
+                            <label>Current Unit Price : </label> <label> {{user.currentPrice}}</label>
+                        </div>
+
+                        
+                        
+
+                     </div>
+
+                     <div class="finc">
+
+                        <div>
+                            <button>Withdraw</button>
+                        </div>
+
+                        <div>
+                            <button>Deposit</button>
+                        </div>
+
+                        
+                        
+
+                     </div>
+
+                 </div>  
+
+
+                 <div id="bidoffer" class="fin2 margic">
+                    <h3>User : Martins</h3>
+
+                    <h4>Commodity: <span>Red Oil</span></h4>
+                    <h4>Qauntity: <span>15</span></h4>
+                    <h4>Offer Price: <span>15000</span></h4>
+                    <h4>Order Type: <span>SELL</span></h4>
+
+                    <div class="finc">
+
+                        <div>
+                            <button>Accept</button>
+                        </div>
+
+                        <div>
+                            <button>Reject</button>
+                        </div>
+
+                        
+                        
+
+                     </div>
+
+                     </div>
+
+                     <div id="bidreject" class="fin2 margic">
+
+                        <h1 class="text-danger bg-light p-2 mt-2 mb-2 " style="border-radius: 5px;">Bid Rejected</h1>
+                        <h3>User : Martins</h3>
+    
+                        <h4>Commodity: <span>Red Oil</span></h4>
+                        <h4>Qauntity: <span>15</span></h4>
+                        <h4>Offer Price: <span>15000</span></h4>
+                        <h4>Initial Offer Price: <span>14000</span></h4>
+                        <h4>Order Type: <span>SELL</span></h4>
+    
+                        <div class="finc">
+    
+                            <div>
+                                <button>New Offer</button>
+                            </div>
+    
+                            <div>
+                                <input type="text">
+                            </div>
+    
+                            
+                            
+    
+                         </div>
+    
+                         </div>
+
+                         <div id="bidaccept" class="fin2 margic">
+
+                            <h1 class="text-success bg-light p-2 mt-2 mb-2 " style="border-radius: 5px;">Bid Accepted</h1>
+                            <h3>User : Martins</h3>
+        
+                            <h4>Commodity: <span>Red Oil</span></h4>
+                            <h4>Qauntity: <span>15</span></h4>
+                            <h4>Offer Price: <span>15000</span></h4>
+                            <h4>Accepted Offer Price: <span>14000</span></h4>
+                            <h4>Order Type: <span>SELL</span></h4>
+        
+                            <div class="finc">
+        
+                                <div>
+                                    <button class="text-light bg-success">Procced</button>
+                                </div>
+        
+                                
+        
+                                
+                                
+        
+                             </div>
+
+                             <input type="checkbox" name="" id=""><span>Terms and conditions apply</span>
+
+        
+                             </div>
+
+
+
+
+
+                     
+                 </div>
+             </div>
+        
+        </div>
+
+        </div>
+
+
+
+
+
+
+        <script src="./js_scripts/jquery.js"></script>
+        <script src="./js_scripts/bootstrap.min.js"></script>
+        <script src="./js_scripts/angular.min.js"></script>
+        <script src="./js_scripts/angular-cookies.min.js"></script>
+        <script src="./js_scripts/anime.js"></script>
+        <script src="./js_scripts/script.js"></script>
+        
+    </body>
+    </html>

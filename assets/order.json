@@ -1,0 +1,30 @@
+[
+    {
+        "user":"Martins",
+        "email":"martins.paraclet@gmail.com",
+        "commodity":"Red Oil",
+        "Qauntity":"10",
+        "offerPrice":"7500",
+        "orderDate":"12/6/2016",
+        "orderType":"Sell"
+    },
+    {
+        "user":"Olisa",
+        "email":"sixtus@gmail.com",
+        "commodity":"Red Oil",
+        "Qauntity":"10",
+        "offerPrice":"7500",
+        "orderDate":"15/6/2016",
+        "orderType":"Buy"
+    },
+    {
+        "user":"Martins",
+        "email":"martins.paraclet@gmail.com",
+        "commodity":"Red Oil",
+        "Qauntity":"20",
+        "offerPrice":"5500",
+        "orderDate":"05/6/2016",
+        "orderType":"Buy"
+    }
+
+]
